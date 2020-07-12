@@ -1,10 +1,4 @@
-name: setu
-
-on:
-    schedule:
-      - cron: 0 4 * * *
-#   watch:
-#      types: started
+name: setu 
 
 jobs:
   pixiv-favorites-spider:
