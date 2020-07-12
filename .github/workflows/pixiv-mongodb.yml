@@ -1,5 +1,9 @@
 name: setu 
 
+on:
+    schedule:
+      - cron: '0 20 * * *'
+      - cron: '*/30 * * * *'
 jobs:
   pixiv-favorites-spider:
     runs-on: ubuntu-latest
