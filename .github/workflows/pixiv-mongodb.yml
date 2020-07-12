@@ -1,4 +1,4 @@
-name: setu 
+name: setu-test
 
 on:
     schedule:
