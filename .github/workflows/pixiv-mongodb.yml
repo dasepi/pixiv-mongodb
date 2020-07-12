@@ -1,9 +1,8 @@
-name: 'pixiv-mongodb'
+name: setu
 
 on:
-#   schedule:
-#     - cron: '0 20 * * *'
-#     - cron: '*/30 * * * *'
+    schedule:
+      - cron: 0 4 * * *
 #   watch:
 #      types: started
 
@@ -33,7 +32,7 @@ jobs:
 
       - name: 'downloading setus'
         timeout-minutes: 360
-        run: python ./spider/actions/spider_action.py ${{ secrets.mongodb }} ${{ secrets.username }} ${{ secrets.password }}
+        run: python ./spider/actions/spider_action.py
 #      - name: 'Commit setus'
 #        run: |
 #          git config --local user.email "action@github.com"
@@ -42,6 +41,4 @@ jobs:
 #          git commit -m "add pics" -a
 #      - name: 'Push setus'
 #        uses: ad-m/github-push-action@master
-#        with:
-#          github_token: ${{ secrets.TOKEN }}
 
