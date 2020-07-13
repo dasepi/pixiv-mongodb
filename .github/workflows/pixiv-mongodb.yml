@@ -30,7 +30,7 @@ jobs:
 
       - name: 'downloading setus'
         timeout-minutes: 360
-        run: python ./spider/actions/spider_action.py
+        run: python ./spider/spider.py
 #      - name: 'Commit setus'
 #        run: |
 #          git config --local user.email "action@github.com"
