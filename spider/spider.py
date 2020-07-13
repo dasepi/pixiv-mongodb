@@ -10,7 +10,7 @@ from retrying import retry
 from datetime import datetime
 
 '''获取配置'''
-with open('/home/ubuntu/download_setu/config.json', 'r', encoding='utf-8') as f:
+with open('./spider/config.json', 'r', encoding='utf-8') as f:
     config = json.loads(f.read())
     print('获取配置成功')
 myclient = pymongo.MongoClient(config['mongodb'])
