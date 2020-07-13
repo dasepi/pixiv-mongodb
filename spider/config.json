@@ -1,7 +1,7 @@
 {
   "username":"741629395@qq.com",
   "password":"lw1987111825",
-  "mongodb": "mongodb://52.175.53.219:27017/setu",
+  "mongodb": "mongodb://mongodb://13.70.18.252:27017/setu",
   "database": "setu",
   "collection": "setu_all",
   "collection_del": "setu_del"
