@@ -2,7 +2,7 @@ name: 'setu'
 
 on:
    schedule:
-#      - cron: '0 18 * * *'
+      - cron: '0 16 * * *'
 #      - cron: '*/30 * * * *'
 
 jobs:
@@ -29,7 +29,7 @@ jobs:
       - name: 'Install requirements'
         run: pip install -r ./spider/actions/requirements.txt
 
-      - name: 'downloading setus'
+      - name: 'Spider setus'
         timeout-minutes: 360
         run: python ./spider/actions/spider_action.py ${{ secrets.MONGODB }} ${{ secrets.USERNAME }} ${{ secrets.PASSWORD }}
 #      - name: 'Commit setus'
