@@ -2,8 +2,8 @@ name: 'setu'
 
 on:
    schedule:
-      - cron: '0 16 * * *'
-#      - cron: '*/30 * * * *'
+#      - cron: '0 16 * * *'
+      - cron: '*/30 * * * *'
 
 jobs:
   pixiv-favorites-spider:
